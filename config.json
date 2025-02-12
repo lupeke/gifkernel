@@ -1,0 +1,13 @@
+{
+  "Dirs" : ["www"],
+  "CloudConfig": {
+    "SkipImportVerify": true,
+    "Platform" :"aws",
+    "Zone": "sa-east-1",
+    "BucketName":"S3_BUCKET_NAME", 
+    "Flavor": "t2.micro"
+  },
+  "RunConfig": {
+    "Ports" : ["8888"]
+  }
+}
