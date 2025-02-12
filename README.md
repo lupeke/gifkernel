@@ -23,11 +23,12 @@ Unikernels seem like a really interesting way to tackle certain architectural pr
 4.  Build:   
    ```GOOS=linux go build -o gifkernel server.go```
 5. Run:
-   ```ops run gifkernel``` then visit http://localhost:8888.
+   ```ops run gifkernel```
+   then visit http://localhost:8888.
 
 ### Test
 
-A basic load test program is available under `cmd/loadtest.go`. You can test locally or against your deployed server.
+A basic load test program is available under `cmd/bench.go`. You can test locally or against your deployed server.
 
 ### Deploy
 
