@@ -11,9 +11,11 @@ Unikernels seem like a really interesting way to tackle certain architectural pr
 > Note: Currently tested on Linux.
 
 *   [Go](https://go.dev/)
+      <sub>for the web server (tested on 1.23.4)</sub>
 *   [Ops](https://ops.city/)
-*   [Giphy](https://developers.giphy.com/) API key
-*   [Vegeta](https://github.com/tsenart/vegeta) (optional - for load testing)
+     <sub>to create and deploy the unikernel</sub>
+*   [Giphy](https://developers.giphy.com/) <sub>API key</sub>
+*   [Vegeta](https://github.com/tsenart/vegeta) <sub>(optional - for load testing)</sub>
 
 ### Usage
 
@@ -22,9 +24,9 @@ Unikernels seem like a really interesting way to tackle certain architectural pr
 3.  Open `www/index.html` and add your Giphy API key.
 4.  Build:   
    ```GOOS=linux go build -o gifkernel server.go```
-5. Run:
+5. Run:<br />
    ```ops run gifkernel```
-   then visit http://localhost:8888.
+   <br /><sub>then visit http://localhost:8888.</sub>
 
 ### Test
 
@@ -32,4 +34,5 @@ A basic load test program is available under `cmd/bench.go`. You can test locall
 
 ### Deploy
 
-Execute the `deploy.sh` script.
+* Ensure your ~/.aws/credentials file is setup.
+* Execute the `deploy.sh` script.
